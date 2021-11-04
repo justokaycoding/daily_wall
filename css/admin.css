@@ -1,0 +1,31 @@
+.dailyWallAdmin {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+.dailyWallAdmin td, .dailyWallAdmin th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dailyWallAdmin tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dailyWallAdmin tr:hover {
+  background-color: #ddd;
+}
+
+.dailyWallAdmin th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2271b1;
+  color: white;
+}
+
+.tableHeight {
+  max-height: 250px;
+  overflow-y: scroll;
+  display: inline-block;
+}

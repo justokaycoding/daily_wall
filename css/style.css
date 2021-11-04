@@ -1,0 +1,138 @@
+:root {
+  background: #f5f6fa;
+  color: #9c9c9c;
+  font-family: sans-serif;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+body{
+  overflow: hidden;
+}
+
+.dailyWall {
+  box-shadow: 0px 0px 11px 20px rgb(245 246 250 / 50%);
+  background-color: #f5f6fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+
+.btn--primary:hover {
+  background: #6c7ff2;
+}
+
+.btn--primary:active {
+  background: #7f8ff4;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--inside {
+  margin-left: -96px;
+}
+
+.form__field {
+  width: 360px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+}
+
+p {
+  text-align: center;
+}
+
+.word_cloud {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 80%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+}
+
+.cloud li {
+  color: #7f8ff4;
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.125rem 0.25rem;
+  text-decoration: none;
+  position: relative;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.cloud li:nth-of-type(9n+9) {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media (max-width:1366px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:1024px) {
+  html {
+    font-size: 14px;
+  }
+}
