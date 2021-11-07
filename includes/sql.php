@@ -56,6 +56,7 @@ class dw_sql{
     $results = !empty($results) ? $results : '';
 
     if(empty($results)){
+      $this->addToTable("John Was Here");
       $this->getData();
     }
 
