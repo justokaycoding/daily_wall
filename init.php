@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Daily Wall
-Version: 0.1
+Version: 0.2
 Description: Post inspiration text to a website.
 Author: John Hines
 Author URI: https://justokaycoding.com/
